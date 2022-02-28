@@ -1,0 +1,88 @@
+body {
+    max-width: 1600px;
+    background: linear-gradient(var(--gradient-first-color), var(--gradient-second-color));
+    background-repeat: no-repeat;
+}
+
+/* Nav */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    overflow: hidden;
+    background-color: var(--white);
+    border-radius: 0 0 15px 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0.5rem;
+    width: 50%;
+}
+
+/* Rozwijanie menu */
+nav.active ul li {
+    display: inline-block;
+
+}
+
+nav ul li+li {
+    display: none;
+}
+
+/* Koniec rozwijania menu */
+nav::before {
+    height: 80%;
+    width: 40%;
+    top: 0;
+    left: 75%;
+    background: url(/img/svhsilh_dots.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 10%;
+    z-index: 100;
+}
+
+/* Header */
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+header .text-container {
+    align-self: center;
+}
+
+header::after {
+    height: 80vh;
+    width: 80vw;
+    z-index: -1;
+    background-color: var(--main-color);
+    border-radius: 0 0 125px 0;
+}
+
+header .undraw-image {
+    bottom: 30%;
+    left: 5%;
+}
+
+/* Main */
+main {}
+
+section#about-me {
+    height: 100vh;
+}
+
+section#projects {
+    height: 100vh;
+}
