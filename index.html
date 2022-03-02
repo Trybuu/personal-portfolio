@@ -5,11 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front End Developer | Marek Trybuła</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/utilities.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1 class="title text">Hi im Marek</h1>
+    <div class="nav-button-container flex">
+        <i id="nav-show-btn" class="fa fa-bars active" aria-hidden="true"></i>
+        <i id="nav-close-btn" class="fa fa-times" aria-hidden="true"></i>
+    </div>
+
+    <!-- add class active to show menu -->
+    <nav class="nav-container flex pd-xs"> 
+        <ul>
+            <li><a class="nav-link" href="#">Beginning</a></li>
+            <li><a class="nav-link" href="#">Whoami</a></li>
+            <li><a class="nav-link" href="#">Projects</a></li>
+            <li><a class="nav-link" href="#">Contact me</a></li>
+        </ul>
+        <div class="visual-stripe s1"></div>
+        <div class="visual-stripe s2"></div>
+        <div class="visual-stripe s3"></div>
+        <div class="visual-stripe s4"></div>
+        <div class="visual-stripe s5"></div>
+    </nav>
+
+    <header class="flex pd-xs">
+        <h1 class="title">Hi I'm Marek</h1>
+    </header>
+    
     <script src="/js/main.js"></script>
 </body>
 </html>
