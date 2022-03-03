@@ -17,10 +17,10 @@ navCloseBtn.addEventListener('click', () => {
 
 // visual stripes animation
 
-const visualStripes = document.querySelectorAll('.visual-stripe');
+// const visualStripes = document.querySelectorAll('.visual-stripe');
 
-function animateStripes(){
-    visualStripes.forEach(stripe, animateStripes())
-}
+// function animateStripes(){
+//     visualStripes.forEach(stripe, animateStripes())
+// }
 
-animateStripes();
+// animateStripes();
