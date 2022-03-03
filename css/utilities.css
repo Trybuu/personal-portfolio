@@ -62,6 +62,21 @@
     width: 75%;
 }
 
+.subtitle-smaller.bg {
+    position: relative;
+}
+
+.subtitle-smaller.bg::after {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: 25%;
+    width: 75%;
+    height: 110%;
+    background-color: var(--font-gold-color);
+    z-index: -1;
+}
+
 .text {
     text-align: justify;
 }

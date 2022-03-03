@@ -100,3 +100,21 @@ header {
     top: 50%;
     left: -25%;
 }
+
+/* Footer */
+
+footer {
+    background-color: var(--font-dark-color);
+    border-top: 1rem solid var(--font-gold-color);
+}
+
+
+.social-link {
+    color: var(--font-gold-color);
+    font-size: var(--font-md);
+    margin: 1rem;
+}
+
+footer a:visited {
+    color: var(--font-gold-color);
+}
